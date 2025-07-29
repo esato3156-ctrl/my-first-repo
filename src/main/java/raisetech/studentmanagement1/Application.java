@@ -19,7 +19,7 @@ public class Application {
   //その後、文字やメゾット名、URLを変更して実行しましょう。
   @GetMapping("/hello") // ← このURLでアクセス
   public String helloUser() { // ← メソッド名は任意（indexでもok)
-   return "Hello, World!"; // ← この文字列を返す
+    return "Hello, World!"; // ← この文字列を返す
   }
 }
 
