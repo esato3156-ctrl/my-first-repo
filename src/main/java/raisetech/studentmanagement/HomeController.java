@@ -1,4 +1,4 @@
-package raisetech.studentmanagement1;
+package raisetech.studentmanagement;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 

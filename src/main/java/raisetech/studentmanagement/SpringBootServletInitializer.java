@@ -1,4 +1,4 @@
-package raisetech.studentmanagement1;
+package raisetech.studentmanagement;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
@@ -7,6 +7,6 @@ public class SpringBootServletInitializer extends
 
   @Override
   protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-    return application.sources(raisetech.studentmanagement1.Application.class);
+    return application.sources(Application.class);
   }
 }
