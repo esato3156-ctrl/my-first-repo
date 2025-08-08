@@ -1,4 +1,4 @@
-package raisetech.studentmanagement1;
+package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ public class Application {
   /*@Autowiredを入れると、springsが管理しているオートワイヤー
   を定義出来る。*/
   @Autowired
-  private StudentRepository repository;
+  private raisetech.studentmanagement1.StudentRepository repository;
 
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
@@ -23,7 +23,7 @@ public class Application {
   // @RequestParamで入れてきた情報nameが必要
   public String getStudent(@RequestParam("name") String name) {
     //tanakaTarouを検索すると、Student studentが追加される。前回より、nameと省略出来る。
-    Student student = repository.searchByName(name);
+    raisetech.studentmanagement1.Student student = repository.searchByName(name);
   /*データベースからデータをとった時に、
     Student.javaのStudentの名前や年齢をデータベースに
     入っている値に応じて、設定してくれると。便利な入れ物になる。*/
